@@ -1,0 +1,131 @@
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.baseline_title {
+  height: 74px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 49px;
+  margin-left: 257px;
+  font-size: 28px;
+  width: 100%;
+}
+
+
+.wrapper {
+	  height: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 106px;
+  margin-left: 19%;
+  font-size: 37px;
+  width: 100%;
+}
+
+.beasiswa {
+	font-size: 21px;
+  padding: 20px;
+  width: 73%;
+  border:  1px solid #cacaca;
+  margin-top: -1px;
+}
+
+.beasiswa:hover {
+  background-color: #eee;
+  cursor:pointer;
+}
+
+.beasiswa:hover .dbutton{
+  color:white;
+  background-color: rgb(51, 128,1);
+}
+
+
+
+.wrap {
+	margin-top:133px;
+	margin-left:-4px;
+}
+
+h2 {
+	font-size: 17px;
+  padding: 0;
+  margin: 1px;
+  font-weight: lighter;
+}
+
+.sidebar img {
+	width: 115px;
+  position: fixed;
+  top: 65px;
+  left: 66px;
+}
+
+.dbutton {
+    position: absolute;
+  margin-top: -51px;
+  margin-left: 861px;
+  padding: 11px 26px;
+  color: rgb(51, 128, 1);
+  border-radius: 3px;
+  border: 1px solid rgb(51, 128,1);
+}
+
+.sidebar table {
+  position: fixed;
+  left: 90px;
+  margin-top: 33px;
+}
+
+.sidebar_menu {
+  height: 32px;
+  text-align: left;
+  font-size: 17px;
+}
+
+.active {
+  font-weight:bold;
+}
+
+a {
+    text-decoration: none;
+  color: black;
+}
+
+.baseline_title_lv2 {
+    height: 74px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 49px;
+  margin-left: 257px;
+  font-size: 30px;
+  width: 100%;
+}
+
+hr {
+  margin:0px;
+}
+
+.nya {
+    margin-top: -2px;
+  border: 1px solid;
+  width: 125px;
+}
+
+.tab_menu {
+   margin-top: 18px;
+  width: 361px;
+  text-align: left;
+  padding: 1px 0px;
+  text-align: left;
+  padding-bottom: 14px;
+  margin-bottom: 0px;
+  table-layout: fixed;
+  margin-left: 37px;
+}
+

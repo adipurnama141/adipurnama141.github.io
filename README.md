@@ -1,1 +1,1 @@
-# beasiswacom
+#beasiswa.com
