@@ -1,0 +1,66 @@
+.tabdaftar {
+      margin-top: 18px;
+  width: 543px;
+  text-align: left;
+  padding: 1px 0px;
+  text-align: left;
+  padding-bottom: 14px;
+  margin-bottom: 0px;
+  table-layout: fixed; 
+  margin-left: 15px;
+  }
+
+
+.dbutton:hover {
+  color:white;
+  background-color: rgb(51, 128,1);
+}
+
+.input_qa {
+  width: 86%;
+height: 52px;
+padding: 7px;
+}
+
+.syarat_umum {
+table-layout: fixed;
+width: 901px;
+height: 22px;
+margin-left: -3px;
+margin-top: 3px;
+}
+
+.lanjutgan {
+    position: absolute;
+  margin-top: 24px;
+  /* margin-left: 861px; */
+  padding: 6px 26px;
+  color: rgb(51, 128, 1);
+  border-radius: 3px;
+  border: 1px solid rgb(51, 128,1);
+  font-size: 21px;
+}
+
+.lanjutgan:hover{
+  color:white;
+  background-color: rgb(51, 128,1);
+}
+
+.input_daftar {
+    width: 86%;
+  height: 52px;
+  padding: 7px;
+  margin-top: 17px;
+}
+
+.tab_kelola {
+  margin-top: 18px;
+  width: 799px;
+  text-align: left;
+  padding: 1px 0px;
+  text-align: left;
+  padding-bottom: 14px;
+  margin-bottom: 0px;
+  table-layout: fixed;
+  margin-left: 40px;
+}
