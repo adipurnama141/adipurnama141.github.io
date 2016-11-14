@@ -1,0 +1,22 @@
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+    background-color: #f8f8f8;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    font-size: 17px;
+    overflow: auto;
+    text-wrap: unrestricted;
+    word-wrap: break-word;
+    padding: 3px 5px 3px 3px; 
+}
+
+.plus-button {
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 0;
+    width: 835px;
+    color : #d0d0d0;   
+}
