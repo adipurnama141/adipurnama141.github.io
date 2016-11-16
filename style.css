@@ -47,6 +47,33 @@ body {
   background-color: rgb(51, 128,1);
 }
 
+.notifikasi {
+	font-size: 21px;
+  padding: 10px;
+  width: 73%;
+  border:  1px solid #cacaca;
+  margin-top: -1px;
+}
+
+.notifikasi:hover {
+  background-color: #eee;
+  cursor:pointer;
+}
+
+.notifikasi:hover .dbutton{
+  color:white;
+  background-color: rgb(51, 128,1);
+}
+
+.wrapper-notifikasi {
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 150px;
+  margin-left: 19%;
+  font-size: 37px;
+  width: 100%;
+}
 
 
 .wrap {
@@ -165,12 +192,12 @@ h1 {
   font-size: 37px;
   width: 100%;{
   }
-  
+
 .dbutton:hover {
   color:white;
   background-color: rgb(51, 128,1);
 }
-  
+
 .syarat_umum {
   table-layout: fixed;
   width: 901px;
@@ -178,9 +205,3 @@ h1 {
   margin-left: -3px;
   margin-top: 3px;
 }
-  
-  
-
-  
-
-  
