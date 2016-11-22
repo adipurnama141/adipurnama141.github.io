@@ -165,6 +165,36 @@ h1 {
   width: 100%;
 }
 
+.wrapper3 {
+  height: 1%;
+  top: 0;
+  left: 0;
+  margin-top: 204px;
+  margin-left: 19%;
+  font-size: 37px;
+  width: 100%;
+}
+
+.wrapper4 {
+  height: 10%;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  margin-left: 19%;
+  font-size: 25px;
+  width: 100%;
+}
+
+.wrapper5 {
+  height: 10%;
+  top: 0;
+  left: 0;
+  margin-top: 400px;
+  margin-left: 19%;
+  font-size: 25px;
+  width: 100%;
+}
+
 .dbutton:hover {
   color:white;
   background-color: rgb(51, 128,1);
@@ -185,6 +215,10 @@ h1 {
   margin-top: 204px;
   margin-left: 19%;
   width: 80%;
+}
+
+.linkfaq {
+  color: rgb(51, 128, 1);
 }
 
 .mdl-button--raised.mdl-button--colored,
