@@ -29,6 +29,14 @@ body {
   font-size: 37px;
   width: 100%;
 }
+.beasiswaask {
+	font-size: 21px;
+  padding: 20px;
+  width: 73%;
+  border:  1px solid #cacaca;
+  margin-top: -1px;
+  position: relative;
+}
 
 .beasiswa {
 	font-size: 21px;
@@ -71,6 +79,16 @@ h2 {
     position: absolute;
   margin-top: -51px;
   margin-left: 861px;
+  padding: 11px 26px;
+  color: rgb(51, 128, 1);
+  border-radius: 3px;
+  border: 1px solid rgb(51, 128,1);
+}
+
+.dbutton2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   padding: 11px 26px;
   color: rgb(51, 128, 1);
   border-radius: 3px;
@@ -171,7 +189,7 @@ h1 {
   left: 0;
   margin-top: 204px;
   margin-left: 19%;
-  font-size: 37px;
+  font-size: 25px;
   width: 100%;
 }
 
@@ -179,23 +197,19 @@ h1 {
   height: 10%;
   top: 0;
   left: 0;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left: 19%;
   font-size: 25px;
   width: 100%;
 }
 
-.wrapper5 {
-  height: 10%;
-  top: 0;
-  left: 0;
-  margin-top: 400px;
-  margin-left: 19%;
-  font-size: 25px;
-  width: 100%;
-}
 
 .dbutton:hover {
+  color:white;
+  background-color: rgb(51, 128,1);
+}
+
+.dbutton2:hover {
   color:white;
   background-color: rgb(51, 128,1);
 }
