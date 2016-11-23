@@ -46,117 +46,120 @@
     </div>
 
 	<div class="width-table">
-        <p style="margin-left: 18px">Informasi yang ditampilkan : </p>
-        <div class="container">
-              <span class="alert">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-              nama
-            </span>
-            <span class="alert">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-              pekerjaan
-            </span>
-            <span class="alert">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-              lokasi kantor
-            </span>
-            <span class="alert">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-              mulai bekerja
-            </span>
-            <span class="alert">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-              gaji
-            </span> <br>
-            <div>
-                <select name="cars" class="informasi">
-                    <option value="volvo">Asal Perguruan Tinggi</option>
-                    <option value="volvo">Umur</option>
-                    <option value="saab">Alamat Rumah</option>
-                    <option value="fiat">Tanggal Lahir</option>
-                </select><a href="kelola4tambah.html" style="margin-left:4px"><input type="button" href="kelola4tambah.html" value="Tambahkan Informasi" class="tambahkan"></a>
+        <ul class="tabs">
+            <li class="tab-link" data-tab="tab-1"><a href="kelola5.html">Daftar Pendaftar </a></li>
+            <li class="tab-link  current" data-tab="tab-2"><a href="kelola5lulus.html">Pendaftar yang Diluluskan</a></li>
+            <li class="tab-link" data-tab="tab-3"><a href="kelola5sembunyi.html">Pendaftar yang Disembunyikan</a></li>
+        </ul>
+        <div class="tab-content">
+            <p style="margin-left: 18px">Informasi yang ditampilkan : </p>
+            <div class="container">
+                  <span class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  nama
+                </span>
+                <span class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  pekerjaan
+                </span>
+                <span class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  lokasi kantor
+                </span>
+                <span class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  mulai bekerja
+                </span>
+                <span class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  gaji
+                </span>
+                <span class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                  umur
+                </span>
+                <br>
+                <div>
+                    <select name="cars" class="informasi">
+                        <option value="volvo">Asal Perguruan Tinggi</option>
+                        <option value="volvo">Umur</option>
+                        <option value="saab">Alamat Rumah</option>
+                        <option value="fiat">Tanggal Lahir</option>
+                    </select><a href="#" style="margin-left:4px"><input type="button" value="Tambahkan Informasi" class="tambahkan"></a>
+                </div>
             </div>
+            <table id="example" class="mdl-data-table" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Pekerjaan</th>
+                        <th>Lokasi kantor</th>
+                        <th>Umur</th>
+                        <th>Mulai bekerja</th>
+                        <th>Gaji</th>
+                        <th>Detail</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Pekerjaan</th>
+                        <th>Lokasi kantor</th>
+                        <th>Umur</th>
+                        <th>Mulai bekerja</th>
+                        <th>Gaji</th>
+                        <th>Detail</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>32</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                        <td><a href="#" class="lihat-merah" onclick="hideElement(this);">Batalkan</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tatyana Fitzpatrick</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>19</td>
+                        <td>2010/03/17</td>
+                        <td>$385,750</td>
+                        <td><a href="" class="lihat-merah">Batalkan</a></td>
+                    </tr>
+                    <tr>
+                        <td>Lael Greer</td>
+                        <td>Systems Administrator</td>
+                        <td>London</td>
+                        <td>21</td>
+                        <td>2009/02/27</td>
+                        <td>$103,500</td>
+                        <td><a href="" class="lihat-merah">Batalkan</a></td>
+                    </tr>
+                    <tr>
+                        <td>Shou Itou</td>
+                        <td>Regional Marketing</td>
+                        <td>Tokyo</td>
+                        <td>20</td>
+                        <td>2011/08/14</td>
+                        <td>$163,000</td>
+                        <td><a href="" class="lihat-merah">Batalkan</a></td>
+                    </tr>
+                    <tr>
+                        <td>Caesar Vance</td>
+                        <td>Pre-Sales Support</td>
+                        <td>New York</td>
+                        <td>21</td>
+                        <td>2011/12/12</td>
+                        <td>$106,450</td>
+                        <td><a href="" class="lihat-merah">Batalkan</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <table id="example" class="mdl-data-table" cellspacing="0" width="100%">
-            <thead>
-                <tr>
-                    <th>Nama</th>
-                    <th>Pekerjaan</th>
-                    <th>Lokasi kantor</th>
-                    <th>Mulai bekerja</th>
-                    <th>Gaji</th>
-                    <th>Detail</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <th>Nama</th>
-                    <th>Pekerjaan</th>
-                    <th>Lokasi kantor</th>
-                    <th>Mulai bekerja</th>
-                    <th>Gaji</th>
-                    <th>Detail</th>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
-                    <td><a href="" class="lihat-merah">Batalkan</a></td>
-                </tr>
-                <tr>
-                    <td>Garrett Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>2011/07/25</td>
-                    <td>$170,750</td>
-                    <td><a href="" class="lihat-merah">Batalkan</a></td>
-                </tr>
-                <tr>
-                    <td>Ashton Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>2009/01/12</td>
-                    <td>$86,000</td>
-                    <td><a href="#" class="lihat-merah" onclick="hideElement(this);">Batalkan</a></td>
-                </tr>
-                <tr>
-                    <td>Cedric Kelly</td>
-                    <td>Senior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>2012/03/29</td>
-                    <td>$433,060</td>
-                    <td><a href="" class="lihat-merah">Batalkan</a></td>
-                </tr>
-                <tr>
-                    <td>Airi Satou</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>2008/11/28</td>
-                    <td>$162,700</td>
-                    <td><a href="" class="lihat-merah">Batalkan</a></td>
-                </tr>
-                <tr>
-                    <td>Brielle Williamson</td>
-                    <td>Integration Specialist</td>
-                    <td>New York</td>
-                    <td>2012/12/02</td>
-                    <td>$372,000</td>
-                    <td><a href="" class="lihat-merah">Batalkan</a></td>
-                </tr>
-                <tr>
-                    <td>Herrod Chandler</td>
-                    <td>Sales Assistant</td>
-                    <td>San Francisco</td>
-                    <td>2012/08/06</td>
-                    <td>$137,500</td>
-                    <td><a href="" class="lihat-merah">Batalkan</a></td>
-                </tr>
-            </tbody>
-        </table>
 	</div>
 </body>
 <script type="text/javascript" src="api/jquery-1.12.3.js"></script>

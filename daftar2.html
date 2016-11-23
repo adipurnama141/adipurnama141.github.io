@@ -5,6 +5,11 @@
 	<link href="style.css" rel="stylesheet">
 	<link href="style2.css" rel="stylesheet">
 
+	<script src="api/jquery.min.js"></script>
+	<script src="api/angular.min.js"></script>
+	<script src="api/nimfinder.js"></script>
+	<script src="api/sticky.js"></script>
+
 </head>
 
 <body>
@@ -16,71 +21,101 @@
 			<tr><td><div class="sidebar_menu active"> Detil Beasiswa </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Register </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Login </div></td></tr>
-
 		</table>
 	</div>
 
-	<div class="baseline_title_lv2"> <h2> Pendaftaran Beasiswa  </h2> ABB Jurgen Dormann Foundation  
+	<div class="header_fixed">
+		<div class="baseline_title_lv2 sticky"> 
+			<h2> Pendaftaran Beasiswa  </h2> ABB Jurgen Dormann Foundation  
+			<br>
+			<table class="tabdaftar"">
+			<tr>
+				<td> <a href="daftar1.html">Memulai</a> </td>
+				<td class="active" > <a href="daftar2.html">Biodata</a></td> 
+				<td> <a href="daftar3.html">Persyaratan</a>  </td>
+				<td> <a href="daftar4.html">Selesai</a> </td>
+			</tr>
+			</table>
+				<hr> 
+				<hr class="nya_berita">
+		</div>
+	</div>	
 
-	
-
-	<br>
-	<table class="tabdaftar">
-	<tr>
-		<td > <a href="daftar1.html"> Memulai </a> </td>
-		<td class="active" > <a href="daftar2.html"> Formulir </a>  </td> 
-		<td  > <a href="daftar3.html"> Unggah Berkas </a>  </td>
-		<td> <a href="daftar4.html">Selesai </a> </td>
-	</tr>
-	</table>
-		<hr> 
-		<hr class="nya_berita">
-
-	</div>
-
-
-	<div class="wrapper2">
-		
-		
-		<h1>Formulir Pendaftaran</h1>
-		<h2>Isi formulir pendaftaran berikut</h2>
-
-
-		
-		
+	<div class="wrapper2" ng-app="nimfinder" ng-controller="nimcontroller">
+		<h1>Data Diri</h1>
+		<h2>Cukup sekali isi untuk seluruh beasiswa. Sudah pernah mengisi? Silakan <a href="#" style="color: green;">login</a></h2>
 		<br>
-		<div class="beasiswa">
+		<div class="daftar_beasiswa">
+			Pendidikan Saat Ini<br>
+			<select class="input_daftar">
+			  <option value="select" selected disabled>Pilih Jenjang Pendidikan</option>
+			  <option value="slta">SLTA</option>
+			  <option value="s1">Kuliah S1</option>
+			  <option value="s2">Kuliah S2</option>
+			</select>
+		</div>
+
+		<div class="daftar_beasiswa">
+			Kampus/Sekolah<br>
+			<input list="kampus" class="input_daftar">
+				<datalist id="kampus">
+					<option value="Institut Teknologi Bandung">
+					<option value="Institut Teknologi Sepuluh Nopember">
+					<option value="Institut Seni Indonesia">
+					<option value="Universitas Indonesia">
+					<option value="Universitas Gajah Mada">
+					<option value="Universitas Padjajaran">
+					<option value="Universitas Andalas">
+				</datalist>
+			</input>
+		</div>	
+		<br>
+
+		<div class="daftar_beasiswa">
+			Nomor Induk<br>
+			<input  class="input_daftar" type = "text" ng-model="keyword" ng-change="page=1; search()"></input>			
+		</div>
+
+		<div class="daftar_beasiswa">
 			Nama Lengkap<br>
-			<input class="input_daftar" type = "text" ></input>
+			<input class="input_daftar" type = "text" value="{{mahasiswa[0].name}}"></input>
 		</div>
-		
-		<div class="beasiswa">
-			NIM<br>
-			<input  class="input_daftar" type = "text" ></input>
-			
+
+		<div class="daftar_beasiswa">
+			Jurusan<br>
+			<input  class="input_daftar" type = "text" value="{{mahasiswa[0].prodi}}"></input>
 		</div>
-		<div class="beasiswa">
-			Fakultas<br>
-			<input  class="input_daftar" type = "text" ></input>
+		<div class="daftar_beasiswa">
+			Angkatan<br>
+			<select class="input_daftar" style="width:160px;" value="2012">
+				<option value="auto">{{mahasiswa[0].year}}</option>	
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+			</select>
 		</div>
-		<div class="beasiswa">
+		<div class="daftar_beasiswa">
+			Tanggal Lahir<br>
+			<input class="input_daftar" type="date" style="width:160;"></input>
+		</div>
+
+		<div class="daftar_beasiswa">
 			Alamat<br>
-			<input  class="input_daftar" type = "text" ></input>
+			<textarea rows="3" style="resize:none; width:65%; font-size: 16px; padding:5px;"></textarea>
 		</div>
-		<div class="beasiswa">
+		<div class="daftar_beasiswa">
 			Email<br>
-			<input  class="input_daftar" type = "text" ></input>
-			
+			<input  class="input_daftar" type = "email" autocomplete="on"></input>
+		</div>
+		<div class="daftar_beasiswa">
+			No Hp<br>
+			<input  class="input_daftar" type = "text" autocomplete="on"></input>
 		</div>
 		
-			
-		
-		
-
 		<a href="daftar3.html"> <div class="lanjutgan" > Lanjutkan </div> </a>		
-		
-
-
+		<br>
+		<br>
 	</div>
 
 	</div>
