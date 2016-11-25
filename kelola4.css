@@ -49,6 +49,11 @@ input.form-control.input-sm {
     height: 25px;
     background: white;
     border: 1px solid #959595;
+    cursor: pointer;
+}
+
+.lihat, .lihat-merah {
+    cursor: pointer;
 }
 
 .lihat-merah {
