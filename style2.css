@@ -6,7 +6,7 @@
   text-align: left;
   padding-bottom: 14px;
   margin-bottom: 0px;
-  table-layout: fixed; 
+  table-layout: fixed;
   margin-left: 15px;
   }
 
@@ -17,7 +17,7 @@
 }
 
 .input_qa {
-  width: 86%;
+  width: 80%;
 height: 52px;
 padding: 7px;
 }
@@ -74,6 +74,8 @@ margin-top: 3px;
 .lihat {
     color: rgb(51, 128,1);
     font-weight: 600;
+}
+
 }
 
 #sticky {
