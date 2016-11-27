@@ -5,15 +5,19 @@
 	<link href="style.css" rel="stylesheet">
 	<link href="style2.css" rel="stylesheet">
 	<link href="notifikasi.css" rel="stylesheet">
+	<script src="modernizr.custom.80028.js"></script>
 
 </head>
 
 <body>
+	<div id="note">
+			Beasiswa ABB Jurgen Dormann Foundation yang Anda dapatkan telah dicairkan <a id="close">[close]</a>
+	</div>
 
 <div class="sidebar">
 	<img src="logo.png">
 	<table>
-		<tr><td><div class="sidebar_menu "><a href="#"> Beranda </a></div></td></tr>
+		<tr><td><div class="sidebar_menu "><a href="loggedin.html"> Beranda </a></div></td></tr>
 		<tr>
 			<td class="dropdown-notifikasi">
 				<div class="sidebar_menu active"> <span><a href="#">Notifikasi</a></span>
@@ -69,6 +73,14 @@
 			<h2><i>20 September 2016 pukul 16.00</i></h2>
 		</div>
 </div>
+
+<script>
+ close = document.getElementById("close");
+ close.addEventListener('click', function() {
+	 note = document.getElementById("note");
+	 note.style.display = 'none';
+ }, false);
+</script>
 
 </body>
 
