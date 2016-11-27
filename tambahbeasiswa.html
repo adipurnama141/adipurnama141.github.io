@@ -8,23 +8,17 @@
 
 </head>
 
-<body onload="init();">
+<body>
 
 	<div class="sidebar">
 		<img src="logo.png">
-		<table>
-			<tr><td><div class="sidebar_menu "> Semua </div></td></tr>
-			<tr><td><div class="sidebar_menu active"> Kelola		 Beasiswa </div></td></tr>
-			<tr><td><div class="sidebar_menu"> Register </div></td></tr>
-			<tr><td><div class="sidebar_menu"> Login </div></td></tr>
-
-		
-
-
-		</table>
+        <table>
+            <tr><td><a href="HomeKelola.html"><div class="sidebar_menu active"> Home </div></a></td></tr>
+            <tr><td><div class="sidebar_menu "> Profil </div></td></tr><tr><td><div class="sidebar_menu "> Logout </div></td></tr>
+        </table>
 	</div>
 
-	<div class="baseline_title_lv2" style="top : -25px"> <h2> Pengelolaan Beasiswa  </h2><textarea rows="1" cols="52" id="text" style="font-size: 28px;">ABB Jurgen Dormann Foundation</textarea>   
+	<div class="baseline_title_lv2" style="top : -25px"> <h2> Pengelolaan Beasiswa  </h2><textarea rows="1" cols="52" class="text" style="font-size: 28px;" onfocus="init(this);">Masukan nama beasiswa</textarea>   
 
         <div align ="right" class="dbutton" style="font-size:18px"> <a href="kelola1.html">  Simpan </a></div>
 
@@ -46,38 +40,29 @@
 	<div class="wrapper2">
 		
 		<h1>Syarat Khusus</h1>
-		<textarea rows="1" cols="90" id="text">S1 Teknik Elektro ITB 2013 , IPK >= 3.00</textarea>
+		<textarea rows="1" cols="90" class="text" onfocus="init(this);">Masukan syarat khusus</textarea>
 		
         <div>
             <h1>Fasilitas </h1>
-            <textarea rows="1" cols="90" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Bebas UKT s.d. Semester 8</textarea>
-            <textarea rows="1" cols="90" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Bantuan Biaya</textarea>
-            <textarea rows="1" cols="90" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Laptop</textarea>
+            <textarea rows="1" cols="90" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Masukan fasilitas dari beasiswa</textarea>
             <h2 class="plus-button add">+ Tambah fasilitas</h2>
         </div>
 
         <div>
             <h1>Syarat Umum</h1>
             <table class="syarat_umum">
-            <tr><td> <textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Surat Keterangan Penghasilan Orangtua</textarea></td>		<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Rekening Listrik / PBB</textarea>
+            <tr><td> <textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Masukan syarat umum</textarea></td>		<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Masukan syarat umum</textarea>
                  </td></tr>
-            <tr><td> <textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Rekomendasi Dosen</textarea> </td> 							<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Kartu Keluarga</textarea></td></tr>
-            <tr><td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Rekomendasi Teman</textarea></td> 							<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Rekening BNI Atas Nama Sendiri </textarea></td></tr>
-            <tr><td> <textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">KTM </textarea></td> 										<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Transkrip IPK  </textarea></td></tr>
-            <tr><td> <textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">KSM Semester Terakhir</textarea> </td>						<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Personal Motivation Letter</textarea></td></tr>
-            <tr><td> <textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Sertifikat Pendaftaran</textarea> </td>						<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Rekomendasi Dekan / WDA</textarea></td></tr>
             </table>
-            <h2 class="plus-button">+ Tambah syarat umum</h2>
+            <h2 class="plus-button add">+ Tambah syarat umum</h2>
         </div>
             
         <div>
             <h1>Tanggal Penting </h1>
             <table class="syarat_umum">
-            <tr><td> <span class="daycounter"><b>H-52  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Penutupan Pendaftaran</textarea> </td>		<td>14 Januari 2017 </td></tr>
-            <tr><td> <span class="daycounter"><b>H-72  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Pengumuman</textarea></td><td>15 Januari 2017</td></tr>
-            <tr><td> <span class="daycounter"><b>H-??  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Tambah keterangan tanggal</textarea></td><td><input type="date" name="bday"></td></tr>
+            <tr><td> <span class="daycounter"><b>H-??  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Masukan keterangan tanggal</textarea></td><td><input type="date" name="bday"></td></tr>
             </table>
-            <h2 class="plus-button" style="
+            <h2 class="plus-button add" style="
             margin-bottom: 50px">+ Tambah tanggal penting</h2>
 		</div>
 		
