@@ -31,24 +31,26 @@ margin-top: 3px;
 }
 
 .lanjutgan {
-    position: absolute;
+  position: absolute;
   margin-top: 24px;
-  /* margin-left: 861px; */
+  margin-left: 3px; 
   padding: 6px 26px;
   color: rgb(51, 128, 1);
   border-radius: 3px;
   border: 1px solid rgb(51, 128,1);
   font-size: 21px;
+  background-color: rgb(51, 128,1);
+  color:white;
 }
 
 .lanjutgan:hover{
   color:white;
-  background-color: rgb(51, 128,1);
+  background-color: darkgreen;
 }
 
 .input_daftar {
   font-size: 16px;
-  width: 65%;
+  width: 65% !important;
   height: 50px;
   padding: 5px;
   margin-top: 10px;
@@ -114,8 +116,8 @@ margin-top: 3px;
 .uploadbutton {
   width: 80px;
   text-align: center;
-  margin-top: 10px;
-  padding: 11px 26px;
+  margin-top: 15px;
+  padding: 8px 22px;
   color: rgb(51, 128, 1);
   border-radius: 3px;
   border: 1px solid rgb(51, 128,1); 
