@@ -10,7 +10,8 @@ textarea {
     overflow: auto;
     text-wrap: unrestricted;
     word-wrap: break-word;
-    padding: 3px 5px 3px 3px; 
+    padding: 3px 5px 3px 3px;
+    border: 1px solid #d3d3d3;
 }
 
 .plus-button {
