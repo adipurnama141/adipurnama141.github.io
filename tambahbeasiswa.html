@@ -60,7 +60,7 @@
         <div>
             <h1>Tanggal Penting </h1>
             <table class="syarat_umum">
-            <tr><td> <span class="daycounter"><b>H-??  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Masukan keterangan tanggal</textarea></td><td><input type="date" name="bday"></td></tr>
+            <tr><td> <span class="daycounter"><b>H-??  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapusTanggal(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Masukan keterangan tanggal</textarea></td><td><input type="date" name="bday"></td></tr>
             </table>
             <h2 class="plus-button add" style="
             margin-bottom: 50px">+ Tambah tanggal penting</h2>
@@ -128,7 +128,7 @@
             var newRow = tabelUmum.insertRow(tabelUmum.rows.length);
             var cell1 = newRow.insertCell(0);
             var cell2 = newRow.insertCell(1);
-            cell1.innerHTML = '<span class="daycounter"><b>H-??  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Masukan keterangan tanggal</textarea>';
+            cell1.innerHTML = '<span class="daycounter"><b>H-??  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapusTanggal(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Masukan keterangan tanggal</textarea>';
             cell2.innerHTML = '<input type="date" name="bday">';
         }
        function insertDeleteButton(e) {
@@ -151,6 +151,17 @@
         function hapus(e) {
             setTimeout(function(){
                var prev = e.previousElementSibling;
+                if (prev) {
+                    if (!e.value){
+                        e.parentElement.removeChild(e);
+                    }
+                    prev.parentElement.removeChild(prev);
+                }
+            },250);
+        }
+        function hapusTanggal(e) {
+            setTimeout(function(){
+               var prev = e.previousElementSibling.previousElementSibling;
                 if (prev) {
                     if (!e.value){
                         e.parentElement.removeChild(e);
