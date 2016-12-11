@@ -4,7 +4,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<link href="style2.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -16,9 +15,6 @@
 			<tr><td><div class="sidebar_menu active"> Detil Beasiswa </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Register </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Login </div></td></tr>
-
-
-
 
 		</table>
 	</div>
@@ -48,11 +44,10 @@
 	<div class="wrapper4">
 
 
-		<div class="beasiswaask">
-			<input  class="input_qa" type = "text" ></input>
-			<div style="align:right" class="dbutton2" > Kirim </div>
+		<div id="elementinput" class="beasiswaask">
+			<input id="input_qa" class="input_qa" type = "text" ></input>
+			<div onclick="DisplayPertanyaan()" style="align:right" class="dbutton2" > Kirim </div>
 		</div>
-
 		<div class="beasiswa">
 			<b>Ukuran Pas Foto Untuk Pendaftaran?</b><br>
 			<h2><i>2 x 3 , berlatar belakang warna merah.</i></h2>
@@ -69,18 +64,19 @@
 		</div>
 
 
-
-
-
 	</div>
 
 	</div>
-
-
-
 
 </body>
-
-
+<script src ="jquery-3.1.1.min.js"></script>
+<script>
+function DisplayPertanyaan() {
+	var InputString = document.getElementById("input_qa").value;
+	InputString = "<div class='beasiswa'><b>" + InputString + "</b></div>";
+	$(InputString).insertAfter( "#elementinput" );
+	document.getElementById("input_qa").value = "";
+}
+</script>
 
 </html>

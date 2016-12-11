@@ -1,5 +1,10 @@
 <html>
 <head>
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js">
+    </script>
+     <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+     <link rel="import" href="bower_components/paper-listbox/paper-listbox.html">
+     <link rel="import" href="bower_components/paper-item/paper-item.html">
 	<title> Beasiswa.com </title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
@@ -12,10 +17,6 @@
 		<img src="logo.png">
 		<table>
 			<tr><td><div class="sidebar_menu active"> Semua </div></td></tr>
-			<tr><td><div class="sidebar_menu"> Filter:S1 </div></td></tr>
-			<tr><td><div class="sidebar_menu"> Filter:S2 </div></td></tr>
-			<tr><td><div class="sidebar_menu"> Filter:S3 </div></td></tr>
-			<tr><td><div class="sidebar_menu"> Register </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Login </div></td></tr>
 
 		
@@ -25,6 +26,37 @@
 	</div>
 
 	<div class="baseline_title"> Beasiswa </div>
+
+
+	<paper-dropdown-menu label="Jenjang Pendidikan" vertical-align="bottom" horizontal-align="left" style ="    left: 253px;
+    top: 98px;">
+  <paper-listbox class="dropdown-content">
+    <paper-item>S1</paper-item>
+    <paper-item>S2</paper-item>
+    <paper-item>S3</paper-item>
+    <paper-item>Semua</paper-item>
+  </paper-listbox>
+</paper-dropdown-menu>
+
+
+
+
+
+
+<paper-dropdown-menu label="Jenis Beasiswa" vertical-align="bottom" horizontal-align="left" style ="    left: 272px;
+    top: 98px;">
+  <paper-listbox class="dropdown-content">
+    <paper-item>Beasiswa Prestasi</paper-item>
+    <paper-item>Beasiswa Biaya Hidup</paper-item>
+    <paper-item>Beasiswa Bantuan</paper-item>
+    <paper-item>Beasiswa Tugas Akhir</paper-item>
+  </paper-listbox>
+</paper-dropdown-menu>
+
+
+
+
+
 	<div class="wrapper">
 		<div class="wrap">
 		<a href="detilbeasiswa.html">
