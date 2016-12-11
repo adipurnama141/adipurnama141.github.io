@@ -16,10 +16,6 @@
 			<tr><td><div class="sidebar_menu active"> Kelola		 Beasiswa </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Register </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Login </div></td></tr>
-
-
-
-
 		</table>
 	</div>
 
@@ -52,31 +48,29 @@
 		<div style="position:relative" class="beasiswa">
 			<b>Ukuran Pas Foto Untuk Pendaftaran?</b><br>
 			<h2><i>ditanyakan oleh : adipurnama141 </i></h2>
-			<div align ="right" class="dbutton2"> Jawab </div>
-
-
+			<div id="1" align ="right" onclick="MunculJawab(this.id)" class="dbutton2"> Jawab </div>
 		</div>
 		<div style="position:relative" class="beasiswa">
 			<b>Panjang maksimal essay?</b><br>
 			<h2><i>ditanyakan oleh : anonymous </i></h2>
-			<div align ="right" class="dbutton2"> Jawab </div>
-
+			<div id="2" align ="right" onclick="MunculJawab(this.id)" class="dbutton2"> Jawab </div>
 		</div>
-
-
-
-
-
-
 	</div>
 
 	</div>
-
-
-
 
 </body>
-
-
+<script src ="jquery-3.1.1.min.js"></script>
+<script>
+function MunculJawab(element_id){
+	var stringid = "#" +element_id;
+	var TextBox = "<div id='elementinput' class='beasiswaask'> <input id='input_qa' class='input_qa' type = 'text' ></input> <div id= 'ini' onclick='Answer(this.id)'' style='align:right' class='dbutton2' > Kirim </div> </div> ";
+	$(TextBox).insertAfter(stringid);
+}
+function Answer(element_id) {
+	var id = "#" + element_id;
+	$(id).parent().parent().remove();
+}
+</script>
 
 </html>
