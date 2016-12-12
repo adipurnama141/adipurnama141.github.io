@@ -52,6 +52,60 @@
     /*width: 100%;*/
 }
 
+.status-beasiswa {
+    width: 73%;
+    margin-top: -1px;
+    padding: 10px;
+
+    border: 1px solid #cacaca;
+
+    font-size: 21px;
+}
+
+.status-beasiswa:hover {
+    cursor: pointer;
+
+    background-color: #eee;
+}
+
+.status-beasiswa:hover .dbutton {
+    color: white;
+    background-color: rgb(51, 128, 1);
+}
+
+.status-beasiswa-mini {
+    width: 95%;
+    margin-top: -1px;
+    padding: 10px;
+
+    border: 1px solid #cacaca;
+
+    font-size: 10px;
+}
+
+.status-beasiswa-mini:hover {
+    cursor: pointer;
+
+    background-color: #eee;
+}
+
+.status-beasiswa-mini:hover .dbutton {
+    color: white;
+    background-color: rgb(51, 128, 1);
+}
+
+.wrapper-status-beasiswa {
+    /*height: 100%;*/
+    top: 0;
+    left: 0;
+
+    margin-top: 150px;
+    margin-left: 19%;
+
+    font-size: 37px;
+    /*width: 100%;*/
+}
+
 .dropbtn {
     padding: 16px;
 
