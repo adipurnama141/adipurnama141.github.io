@@ -18,9 +18,8 @@
 	<div class="sidebar">
 		<img src="logo.png">
 		<table>
-			<tr><td><div class="sidebar_menu "> Semua </div></td></tr>
+			<tr><td><div class="sidebar_menu"> <a href="index.html">Semua</a></div></td></tr>
 			<tr><td><div class="sidebar_menu active"> Detil Beasiswa </div></td></tr>
-			<tr><td><div class="sidebar_menu"> Register </div></td></tr>
 			<tr><td><div class="sidebar_menu"> Login </div></td></tr>
 		</table>
 	</div>
@@ -32,8 +31,8 @@
 			<table class="tabdaftar"">
 			<tr>
 				<td> <a href="daftar1.html">Memulai</a> </td>
-				<td class="active" > <a href="daftar2.html">Biodata</a></td> 
-				<td> <a href="daftar3.html">Persyaratan</a>  </td>
+				<td class="active" > <a href="daftar2.html">Formulir</a></td> 
+				<td> <a href="daftar3.html">Dokumen</a>  </td>
 				<td> <a href="daftar4.html">Selesai</a> </td>
 			</tr>
 			</table>
@@ -42,10 +41,11 @@
 		</div>
 	</div>	
 
-	<div class="wrapper2" ng-app="nimfinder" ng-controller="nimcontroller">
+	<div class="wrapper-daftar" ng-app="nimfinder" ng-controller="nimcontroller">
 		<h1>Data Diri</h1>
 		<h2>Cukup sekali isi untuk seluruh beasiswa. Sudah pernah mengisi? Silakan <a type="button" onClick="document.getElementById('id01').style.display='block'" style="color:green;">login</a></h2>
 		<br>
+
 		<div class="daftar_beasiswa">
 			Pendidikan Saat Ini<br>
 			<select class="input_daftar">
@@ -88,7 +88,7 @@
 		</div>
 		<div class="daftar_beasiswa">
 			Angkatan<br>
-			<select class="input_daftar" style="width:160px;" value="2012">
+			<select class="input_daftar" style="width:150px;">
 				<option value="auto">{{mahasiswa[0].year}}</option>	
 				<option value="2013">2016</option>
 				<option value="2013">2015</option>
@@ -103,7 +103,7 @@
 		</div>
 		<div class="daftar_beasiswa">
 			Tanggal Lahir<br>
-			<input class="input_daftar" type="date" style="width:160;"></input>
+			<input class="input_daftar" type="date" style="width:150px;"></input>
 		</div>
 
 		<div class="daftar_beasiswa">
@@ -128,20 +128,20 @@
 		<div id="id01" class="modal">
 		  <form class="modal-content animate" action="">
 
-		    <div class="container">
-		      <label><b>Username</b></label>
-		      <input type="text" placeholder="Enter Username" name="uname" class="input_daftar" required>
-
-		      <label><b>Password</b></label>
-		      <input type="password" placeholder="Enter Password" name="psw" class="input_daftar" 	required>
+		    <div class="modal-form">
+		      <label><b>Email</b></label>&nbsp;
+		      <input class="input_login" type="text" placeholder="Enter Username" name="uname" class="input_daftar" required>
+		      <br>
+		      <label><b>Password</b></label>&nbsp;
+		      <input class="input_login" type="password" placeholder="Enter Password" name="psw" class="input_daftar" 	required>
 		        
-		      <button type="submit">Login</button>
-		      <input type="checkbox" checked="checked"> Remember me
+		      <button type="submit">Masuk</button>
+		      <input type="checkbox" checked="checked"> Ingat saya
 		    </div>
 
 		    <div class="container" style="background-color:#f1f1f1">
 		      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-		      <span class="psw">Forgot <a href="#">password?</a></span>
+		      <span class="psw">lupa password</span>
 		    </div>
 		  </form>
 		</div>
