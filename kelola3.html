@@ -17,7 +17,7 @@
             </table>
 	</div>
 
-	<div class="baseline_title_lv2" style="top : -25px"> <h2> Pengelolaan Beasiswa  </h2> ABB Jurgen Dormann Foundation 
+	<div class="baseline_title_lv2" style="top : -25px"> <h2> Pengelolaan Beasiswa  </h2> ABB Jurgen Dormann Foundation
 
 	<br>
 	<table class="tab_kelola">
@@ -41,21 +41,48 @@
 	</div>
 
 	<div class="wrapper4">
-
-		<div style="position:relative" class="beasiswa">
+		<div class="beasiswa">
 			<b>Ukuran Pas Foto Untuk Pendaftaran?</b><br>
-			<h2><i>ditanyakan oleh : adipurnama141 </i></h2>
+			<h2><i>2 x 3 , berlatar belakang warna merah.</i></h2>
+
 		</div>
-		<div style="position:relative" class="beasiswa">
+		<div class="beasiswa">
 			<b>Panjang maksimal essay?</b><br>
-			<h2><i>ditanyakan oleh : anonymous </i></h2>
+			<h2><i>Essay dibuat maksimal 3 halaman a4. Ditulis tangan.</i></h2>
 		</div>
-		<div style="position:relative; padding-bottom: 60px" class="beasiswa">
-			<div align ="right" class="dbutton2"> Tambahkan pertanyaan </div>
+
+		<div class="beasiswa">
+			<b>Apakah perlu membuat surat SKCK?</b><br>
+			<h2><i>Tidak perlu</i></h2>
+		</div>
+		<div id="FAQ_ADD" style="position:relative; padding-bottom: 60px" class="beasiswaask">
+				<b>
+					Pertanyaan
+				</b>
+				<br>
+				<input id="input_faq_question" class="input_faq" type = "text" ></input>
+				<br>
+				<b>
+					Jawaban
+				</b>
+				<br>
+				<input id="input_faq_answer" class="input_faq" type = "text" ></input>
+				<div onclick="ADDFAQ()" style="align:right" class="dbutton2" > Tambahkan FAQ </div>
 		</div>
 
 	</div>
 </body>
+<script src ="jquery-3.1.1.min.js"></script>
+<script>
+function ADDFAQ() {
+	var InputString = document.getElementById("input_faq_question").value;
+	var AnswerString = document.getElementById("input_faq_answer").value;
+	InputString = "<div class='beasiswa'><b>" + InputString + "</b><br><h2><i>" + AnswerString +"</i></h2>";
+	$(InputString).insertBefore( "#FAQ_ADD" );
+	document.getElementById("input_faq_question").value = "";
+	document.getElementById("input_faq_answer").value = "";
+}
+</script>
 
 
 

@@ -22,6 +22,12 @@ height: 52px;
 padding: 7px;
 }
 
+.input_faq {
+  width: 60%;
+height: 52px;
+padding: 7px;
+}
+
 .syarat_umum {
 table-layout: fixed;
 width: 901px;
@@ -33,7 +39,7 @@ margin-top: 3px;
 .lanjutgan {
   position: absolute;
   margin-top: 24px;
-  margin-left: 3px; 
+  margin-left: 3px;
   padding: 6px 26px;
   color: rgb(51, 128, 1);
   border-radius: 3px;
@@ -46,6 +52,19 @@ margin-top: 3px;
 .lanjutgan:hover{
   color:white;
   background-color: darkgreen;
+}
+
+.balikgan {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 3px;
+  padding: 6px 26px;
+  color: rgb(211,211,211);
+  border-radius: 3px;
+  border: 1px solid rgb(211,211,211);
+  font-size: 21px;
+  background-color: rgb(211,211,211);
+  color:white;
 }
 
 .input_daftar {
@@ -120,11 +139,10 @@ margin-top: 3px;
   padding: 8px 22px;
   color: rgb(51, 128, 1);
   border-radius: 3px;
-  border: 1px solid rgb(51, 128,1); 
+  border: 1px solid rgb(51, 128,1);
 }
 
 .uploadbutton:hover {
   background-color: green;
   color: white;
 }
-
