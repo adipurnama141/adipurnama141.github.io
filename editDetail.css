@@ -38,9 +38,29 @@ tr {
 input[type="date"] {
     position: relative;
     top : -2px;
-    display: 
 }
 
 .delete-button {
     font-size = 14px;
+}
+
+.info {
+    position: relative;
+    top: -5px;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #0fa31b;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.desc {
+    display: none;
+    margin: 0 0 5px 0;
+    font-size: 12px;
+    width: 400px;
+    padding: 5px;
+    border: 1px solid #0fa31b;
 }

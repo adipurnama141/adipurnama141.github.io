@@ -34,25 +34,20 @@
 
 
 	<div class="wrapper2">
-<<<<<<< HEAD
 		
-		<h1>Prasyarat</h1>
+		<h1>Prasyarat<span class="info" onmouseover="showDesc(this);" onmouseout="hideDesc(this);">[?]</span></h1>
+        <p class="desc">Prasyarat berisikan informasi mengenai syarat-syarat yang berhubungan dengan kondisi dari pendaftar beasiswa seperti : nilai ipk, jurusan dan perguran tinggi dari pendaftar.</p>
 		<textarea rows="1" cols="90" class="text" onfocus="init(this);">Masukan prasyarat dari beasiswa</textarea>
-		
-=======
-
-		<h1>Syarat Khusus</h1>
-		<textarea rows="1" cols="90" class="text" onfocus="init(this);">Masukan syarat khusus</textarea>
-
->>>>>>> 60789b221ff3b7d36eae1e12ea27ee13b0db6861
-        <div>
-            <h1>Fasilitas yang Diberikan</h1>
+		<div>
+            <h1>Fasilitas yang Diberikan<span class="info" onmouseover="showDesc(this);" onmouseout="hideDesc(this);">[?]</span></h1>
+            <p class="desc">Fasilitas yang Diberikan berisikan informasi mengenai fasilitas-fasilitas yang diberikan penyedia beasiswa kepada penerima beasiswa nantinya.</p>
             <textarea rows="1" cols="90" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Masukan fasilitas yang diberikan</textarea>
             <h2 class="plus-button add">+ Tambah fasilitas</h2>
         </div>
 
         <div>
-            <h1>Berkas yang Dikumpulkan</h1>
+            <h1>Berkas yang Dikumpulkan<span class="info" onmouseover="showDesc(this);" onmouseout="hideDesc(this);">[?]</span></h1>
+            <p class="desc">Berkas yang Dikumpulkan berisikan informasi mengenai berkas-berkas yang harus dikumpulkan oleh pendaftar beasiswa sebagai syarat dari beasiswa seperti : rekening listrik, surat rekomendasi dosen, surat keterangan hasil orang tua</p>
             <table class="syarat_umum">
             <tr><td> <textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Masukan syarat umum</textarea></td>		<td><textarea rows="1" cols="45" class="text" onblur="hapus(this);" onfocus="init(this);insertDeleteButton(this)">Masukan syarat umum</textarea>
                  </td></tr>
@@ -61,7 +56,8 @@
         </div>
 
         <div>
-            <h1>Tanggal Penting </h1>
+            <h1>Tanggal Penting<span class="info" onmouseover="showDesc(this);" onmouseout="hideDesc(this);">[?]</span></h1>
+            <p class="desc">Tanggal Penting berisikan informasi mengenai waktu-waktu yang perlu diketahui oleh pendaftar beasiswa seperti : waktu terakhir pendaftaran dan waktu pengumuman penerima beasiswa</p>
             <table class="syarat_umum">
             <tr><td> <span class="daycounter"><b>H-??  </b></span> <textarea rows="1" cols="40" class="text" onblur="hapusTanggal(this);" onfocus="init(this);insertDeleteButtonTanggal(this)">Masukan keterangan tanggal</textarea></td><td><input type="date" name="bday"></td></tr>
             </table>
@@ -181,6 +177,14 @@
         function hapusDariTombolTanggal(e) {
             var row = e.parentElement.parentElement;
             row.parentElement.removeChild(row);
+        }
+        function showDesc (e) {
+            var el = e.parentElement.nextElementSibling;
+            el.style.display = "block";
+        }
+        function hideDesc (e) {
+            var el = e.parentElement.nextElementSibling;
+            el.style.display = "none";
         }
     </script>
 
