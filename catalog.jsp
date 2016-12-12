@@ -76,19 +76,16 @@ span.psw {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 40%; /* Could be more or less, depending on screen size */
     font-size:20px;
-}
-
-.modal-form {
-  padding: 10px 30px;
 }
 
 /* The Close Button (x) */
@@ -137,7 +134,6 @@ span.psw {
 .wrapper-daftar {
   margin-left: 260px;
   margin-top: 160px;
-  align-content: center;
 }
 
 .daftar_beasiswa {
@@ -151,7 +147,7 @@ span.psw {
 
 .input_daftar {
   font-size: 16px;
-  width: 65%;
+  width: 65% !important;
   height: 35px;
   padding: 5px;
   margin-top: 5px;
@@ -160,60 +156,4 @@ span.psw {
 .dropdown-daftar{
   width: 86%;
   height: 52px;
-}
-
-.btnform{
-  margin-left: 15px;
-  font-size: 20px;
-  border-radius: 100%;
-  color: #fff;
-  text-align: center;
-  display: inline;
-}
-
-.btnplus{
-  background-color: green;
-}
-
-.btnplus:hover {
-  background-color: darkgreen;
-}
-
-.btnminus{
-  background-color: red;
-}
-
-.btnminus:hover {
-  background-color: darkred;
-}
-
-.uploadbutton {
-  width: 80px;
-  text-align: center;
-  margin-top: 15px;
-  padding: 8px 22px;
-  color: rgb(51, 128, 1);
-  border-radius: 3px;
-  border: 1px solid rgb(51, 128,1); 
-}
-
-.uploadbutton:hover {
-  background-color: green;
-  color: white;
-}
-
-.select_daftar {
-    width: 70px;
-    overflow: hidden;
-}
-
-.select_daftar select {
-   width: 100px;
-   -moz-appearance: none;
-   -webkit-appearance: none;
-   appearance: none;
-}
-
-input::-webkit-calendar-picker-indicator {
-  display: none;
 }
