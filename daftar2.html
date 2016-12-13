@@ -9,7 +9,6 @@
 	<script src="api/jquery.min.js"></script>
 	<script src="api/angular.min.js"></script>
 	<script src="api/nimfinder.js"></script>
-	<script src="api/sticky.js"></script>
 
 </head>
 
@@ -30,10 +29,10 @@
 			<br>
 			<table class="tabdaftar"">
 			<tr>
-				<td> <a href="daftar1.html">Memulai</a> </td>
-				<td class="active" > <a href="daftar2.html">Formulir</a></td> 
-				<td> <a href="daftar3.html">Dokumen</a>  </td>
-				<td> <a href="daftar4.html">Selesai</a> </td>
+				<td class="active"> <a href="daftar1.html"> Memulai </a> </td>
+				<td class="active"> <a href="daftar2.html"> Formulir </a></td> 
+				<td> <a href="daftar3.html"> Berkas </a></td>
+				<td> <a href="daftar4.html"> Pratinjau </a></td>
 			</tr>
 			</table>
 				<hr> 
@@ -42,10 +41,58 @@
 	</div>	
 
 	<div class="wrapper-daftar" ng-app="nimfinder" ng-controller="nimcontroller">
-		<h1>Data Diri</h1>
+		<h1>Formulir Pendaftaran</h1>
 		<h2>Cukup sekali isi untuk seluruh beasiswa. Sudah pernah mengisi? Silakan <a type="button" onClick="document.getElementById('id01').style.display='block'" style="color:green;">login</a></h2>
 		<br>
+		<h3>Data Diri</h3>
+		
+		<div class="daftar_beasiswa">
+			Nama Lengkap<br>
+			<input class="input_daftar" type = "text" value="{{mahasiswa[0].name}}"></input>
+		</div>
 
+		<div class="daftar_beasiswa">
+			Tanggal Lahir<br>
+			<input class="input_daftar" type="date" style="width:150px;"></input>
+		</div>
+		<div class="daftar_beasiswa">
+			Alamat<br>
+			<textarea rows="2" style="resize:none; width:65%; font-size: 16px; padding:5px;" placeholder="Jalan Mawar No.7, RT1 RW5, Kelurahan Cilok, Kecamatan Cireng"></textarea>
+
+			<table style="width:65%; padding:0px; margin:0px;">
+				<tr>
+					<td style="width:50%;">
+						<select class="input_daftar" style="width:100%;">
+						  <option value="select" selected disabled>Provinsi</option>
+						  <option value="jakarta">DKI Jakarta</option>
+						  <option value="jabar">Jawa Barat</option>
+						  <option value="jateng">Jawa Tengah</option>
+						  <option value="jatim">Jawa Timur</option>
+						</select>
+					</td>
+					<td td style="width:50%;">
+						<select class="input_daftar" style="width:100%;">
+						  <option value="select" selected disabled>Kab/Kota</option>
+						  <option value="jakarta">DKI Jakarta</option>
+						  <option value="jabar">Jawa Barat</option>
+						  <option value="jateng">Jawa Tengah</option>
+						  <option value="jatim">Jawa Timur</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="daftar_beasiswa">
+			Email<br>
+			<input  class="input_daftar" type = "email" autocomplete="on"></input>
+		</div>
+		<div class="daftar_beasiswa">
+			No Hp<br>
+			<input  class="input_daftar" type = "text" autocomplete="on"></input>
+		</div>
+		<br>
+
+		<h3>Pendidikan</h3>
 		<div class="daftar_beasiswa">
 			Pendidikan Saat Ini<br>
 			<select class="input_daftar">
@@ -70,17 +117,12 @@
 				</datalist>
 			</input>
 		</div>	
-		<br>
 
 		<div class="daftar_beasiswa">
 			Nomor Induk<br>
 			<input  class="input_daftar" type = "text" ng-model="keyword" ng-change="page=1; search()"></input>			
 		</div>
 
-		<div class="daftar_beasiswa">
-			Nama Lengkap<br>
-			<input class="input_daftar" type = "text" value="{{mahasiswa[0].name}}"></input>
-		</div>
 
 		<div class="daftar_beasiswa">
 			Jurusan<br>
@@ -101,28 +143,18 @@
 				<option value="2010">2008</option>
 			</select>
 		</div>
+		
 		<div class="daftar_beasiswa">
-			Tanggal Lahir<br>
-			<input class="input_daftar" type="date" style="width:150px;"></input>
+			IPK (skala 4)<br>
+			<input class="input_daftar" type="text" name="ipk" style="width:115px !important;"></input>
 		</div>
 
-		<div class="daftar_beasiswa">
-			Alamat<br>
-			<textarea rows="3" style="resize:none; width:65%; font-size: 16px; padding:5px;"></textarea>
-		</div>
-		<div class="daftar_beasiswa">
-			Email<br>
-			<input  class="input_daftar" type = "email" autocomplete="on"></input>
-		</div>
-		<div class="daftar_beasiswa">
-			No Hp<br>
-			<input  class="input_daftar" type = "text" autocomplete="on"></input>
-		</div>
 		
 		<a href="daftar1.html"> <div class="btn btnkiri"> Kembali </div> </a>
 		<a href="daftar3.html"> <div class="btn btnkanan"> Lanjutkan </div> </a>		
 		<br>
 		<br>
+
 
 		<!-- MODAL -->
 		<div id="id01" class="modal">
@@ -159,7 +191,5 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-
 </body>
 </html>

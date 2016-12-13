@@ -27,10 +27,10 @@
 			<br>
 			<table class="tabdaftar"">
 			<tr>
-				<td > <a href="daftar1.html"> Memulai </a> </td>
-				<td > <a href="daftar2.html"> Formulir </a>  </td> 
-				<td class="active"> <a href="daftar3.html">Dokumen</a>  </td>
-				<td> <a href="daftar4.html">Selesai </a> </td>
+				<td class="active"> <a href="daftar1.html"> Memulai </a> </td>
+				<td class="active"> <a href="daftar2.html"> Formulir </a></td> 
+				<td class="active"> <a href="daftar3.html"> Bekas </a></td>
+				<td> <a href="daftar4.html"> Pratinjau </a></td>
 			</tr>
 			</table>
 				<hr> 
@@ -40,28 +40,16 @@
 
 
 	<div class="wrapper-daftar">
-		<h1>Persyaratan Khusus</h1>
-		<h2>Lengkapi data dan unggah berkas pendaftaran</h2>
-	
+		<h1>Unggah Bekas</h1>
 		<br>
+
 		<div class="daftar_beasiswa">
-			IPK (skala 4)<br>
-			<input class="input_daftar" type="text" name="ipk" style="width:115px !important;"></input>
+			Pas Foto<br>
+			<label for="file1" class="uploadbutton" > Browse </label>
+			<input id="file1" type="file" class="uploadbutton" style="visibility:hidden;"></input>
 		</div>
 		<div class="daftar_beasiswa">
-			Prestasi<br>
-			<div ng-app="app" ng-controller="MyCtrl">
-				<div ng-repeat="name in data.names track by $index">
-					<input class="input_daftar" type="text" ng-model="data.names[$index].name">
-					<div class="btnform btnplus" ng-click="addRow($index)" value="Add" ng-show="$last"><a href="">.+.</a></div>
-					<div class="btnform btnminus" ng-click="deleteRow($event,$index)" ng-show="$index != 0"><a href="">.--.</a></div>
-					<!-- <input type="button" ng-click="addRow($index)" value="Add" ng-show="$last"> -->
-					<!--<input type="button" ng-click="deleteRow($event,$index)" value="Delete" ng-show="$index != 0"> -->
-				</div>
-			</div>
-		</div>
-		<div class="daftar_beasiswa">
-			KTM<br>
+			KTM (scan)<br>
 			<label for="file1" class="uploadbutton" > Browse </label>
 			<input id="file1" type="file" class="uploadbutton" style="visibility:hidden;"></input>
 		</div>
@@ -71,11 +59,33 @@
 			<input id="file1" type="file" class="uploadbutton" style="visibility:hidden;"></input>
 		</div>
 		<div class="daftar_beasiswa">
-			Surat Rekomendasi <br>
+			Prestasi<br>
+			<div ng-app="app" ng-controller="MyCtrl">
+				<div ng-repeat="name in data.names track by $index">
+					<label for="file1" class="uploadbutton" > Browse </label>
+					<input id="file1" type="file" class="uploadbutton" style="visibility:hidden;"></input><br>
+					<input class="input_daftar" type="text" ng-model="data.names[$index].name">
+					<div class="btnform btnplus" ng-click="addRow($index)" value="Add" ng-show="$last"><a href="">.+.</a></div>
+					<div class="btnform btnminus" ng-click="deleteRow($event,$index)" ng-show="$index != 0"><a href="">.--.</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="daftar_beasiswa">
+			Rekomendasi Dosen<br>
 			<label for="file1" class="uploadbutton"> Browse </label>
 			<input id="file1" type="file" class="uploadbutton" style="visibility:hidden;"></input>
 		</div>
-		
+		<div class="daftar_beasiswa">
+			Rekomendasi Teman<br>
+			<label for="file1" class="uploadbutton"> Browse </label>
+			<input id="file1" type="file" class="uploadbutton" style="visibility:hidden;"></input>
+		</div>
+		<div class="daftar_beasiswa">
+			Surat Keterangan Penghasilan Orangtua <br>
+			<label for="file1" class="uploadbutton"> Browse </label>
+			<input id="file1" type="file" class="uploadbutton" style="visibility:hidden;"></input>
+		</div>
+
 		<a href="daftar1.html"> <div class="btn btnkiri"> Kembali </div> </a>
 		<a href="daftar4.html"> <div class="btn btnkanan"> Lanjutkan </div> </a>				
 		<br>
@@ -83,11 +93,5 @@
 	</div>
 
 	</div>
-
-
-
 </body>
-
-
-
 </html>
